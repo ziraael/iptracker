@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  /* text input */
+  font-size: 18px;
+}
+
+#top {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-image: url("images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#top h4 {
+  color: white;
+  font-size: 25px;
+}
+
+/* search */
+
+#search-bar {
+  margin-top: 1rem;
+  height: 40px;
+  display: flex;
+  margin-bottom: 3rem;
+}
+
+#search-input {
+  width: 300px;
+  height: inherit;
+  border-radius: 12px 0 0 12px;
+  outline: none;
+  border-style: hidden;
+  padding-left: 1rem;
+}
+
+#search-button {
+  background-color: hsl(0, 0%, 17%);
+  cursor: pointer;
+  padding: 15px 15px 12px 15px;
+  border-radius: 0 12px 12px 0px;
+}
+
+#search-button:hover {
+  background-color: hsl(0, 0%, 10%);
+  transition: ease-in-out 0.6s;
+}
+
+/* end of search */
+
+/* middle */
+
+#middle {
+  width: 50%;
+  height: 150px;
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+#middle span {
+  color: hsl(0, 0%, 59%);
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.info-section {
+  padding: 1rem 3rem 1rem 3rem;
+  border-right: 1px solid hsl(0 0% 59% / 0.4);
+}
+
+.info-section:last-child {
+  border-right: none;
+}
+
+.info-section p {
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+/* end of middle */
+
+#mapid {
+  height: inherit;
+  z-index: 0;
+  height: 770px;
+}
